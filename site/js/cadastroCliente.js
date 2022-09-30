@@ -32,9 +32,9 @@ const headers = {
 function consultarCep() {
     debugger;
     const Icpf = document.getElementById("cep").value.replace(/\D/g, '');
-    let url = 'https://viacep.com.br/ws/' + Icpf + '/json/';
+    var url = 'https://viacep.com.br/ws/' + Icpf + '/json/';
     
-    let options = {
+    var options = {
         method: "GET",
         mode: "cors",
         headers: {
@@ -72,8 +72,8 @@ formulario.addEventListener('submit', function(event){
  
 function cadastrarCliente(){        
     debugger; 
-    let url ="http://177.137.150.86:8090/cliente";
-    let options = {
+    var url ="http://52.87.226.197:8090/cliente";
+    var options = {
         method: "POST",
         headers: headers,
         body: dadosFormulario()
@@ -110,8 +110,8 @@ function dadosFormulario(){
 
 function cadastrarCidade(){        
     debugger;   
-    let url ="http://177.137.150.86:8090/cidade";
-    let options = {
+    var url ="http://52.87.226.197:8090/cidade";
+    var options = {
         method: "POST",
         headers: headers,
         body: JSON.stringify({
@@ -131,8 +131,8 @@ function cadastrarCidade(){
 
 function buscarCidade(){
     debugger;
-    let url ="http://177.137.150.86:8090/cidade/"+Icidade.value;
-    let options = {
+    var url ="http://52.87.226.197:8090/cidade/"+Icidade.value;
+    var options = {
         method: "GET",
         mode: "cors",
         headers: headers

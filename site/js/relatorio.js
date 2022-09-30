@@ -35,10 +35,9 @@ function buscarReservas(){
 
 
 function addRows(data){ 
-    debugger;
     const dado = data;
-	let col = [];
-    let colunas = ["Cliente","Cidade","Hospedagem","Estado","Diarias"];
+	var col = [];
+    var colunas = ["Cliente","Cidade","Hospedagem","Estado","Diarias"];
     //let colunas = ["clienteNome","cidadeNome","hospedagemNome","estadoNome","dias"];
     for (let i = 0; i < dado.length; i++) {
       for (let key in dado[i]) {

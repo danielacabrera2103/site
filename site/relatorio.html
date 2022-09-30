@@ -2,67 +2,70 @@
 
 <html lang="pt-br" dir="ltr">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Cravo & Canela</title>
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/relatorio.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
-        <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
-        <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>Cravo & Canela</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/relatorio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+</head>
 
-    <body>
+<body>
 
-        <header class="container__header">
-            <div>
-                <img class="container-logo" src="imagens/cravo-e-canela-invertido.png" alt="Logo Cravo & Canela">
-            </div>
+    <header class="container__header">
+        <div>
+            <img class="container-logo" src="imagens/cravo-e-canela-invertido.png" alt="Logo Cravo & Canela">
+        </div>
 
-            <nav>
-                <input type="checkbox" id="click">
-                
-                <label for="click" class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </label>
+        <nav>
+            <input type="checkbox" id="click">
 
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="cadastroCliente.html">Cadastro de Cliente</a></li>
-                    <li><a href="registroViagens.html">Registro de Viagens</a></li>
-                    <li><a class="active" href="relatorio.html">Relatório</a></li>
-                    <li><a href="index.html"><ion-icon name="log-out-outline"></ion-icon></a></li>
-                </ul>
-            </nav>
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
 
-        </header>
-            
-        <div class="container-relatorio">
-                
-            <div class="container-form">
-                    
-                <div class="title">Relatório</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cadastroCliente.html">Cadastro de Cliente</a></li>
+                <li><a href="registroViagens.html">Registro de Viagens</a></li>
+                <li><a class="active" href="relatorio.html">Relatório</a></li>
+                <li><a href="index.html">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </a></li>
+            </ul>
+        </nav>
 
-                <div class="content">
-                    <form action="#">
-                        <div class="user-details">
+    </header>
+
+    <div class="container-relatorio">
+
+        <div class="container-form">
+
+            <div class="title">Relatório</div>
+
+            <div class="content">
+                <form action="#">
+                    <div class="user-details">
 
                         <div class="input-box">
                             <span class="details">Nome</span>
-                            <input id="nome" type="text" placeholder="Digite o nome" >
+                            <input id="nome" type="text" placeholder="Digite o nome">
                         </div>
 
                         <div class="input-box">
                             <span class="details">Cidade</span>
-                            <input type="text" placeholder="Digite a cidade" >
+                            <input type="text" placeholder="Digite a cidade">
                         </div>
-                            
+
                         <div class="input-box">
                             <span class="details">Estado</span>
-                            <input type="text" placeholder="Digite o Estado" >
+                            <input type="text" placeholder="Digite o Estado">
                         </div>
 
                         <div class="button">
@@ -72,24 +75,20 @@
                         <div class="button">
                             <input class="button" onclick="limparCampos()" type="submit" value="Limpar">
                         </div>
-                    </div>  
-                     
+                    </div>
+
                 </form>
-                
+
 
             </div>
             <div class="container-table">
-                <p id="showData"></p>            
-            </div> 
-           
+                <p id="showData"></p>
+            </div>
+
         </div>
-       
-        
-       
-        
-        
-        <script type="module" src="./js/type1.js"></script>
-        <script nomodule src="./js/type2.js"></script>
+         <script type="module" src="./js/type1.js"></script>
+        <script nomodule src="./js/type2.js"></script> 
         <script src="./js/relatorio.js" defer></script>
-    </body>
+</body>
+
 </html>
